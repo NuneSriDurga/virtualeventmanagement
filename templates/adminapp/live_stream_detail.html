@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ stream.title }}</title>
+</head>
+<body>
+    <h1>{{ stream.title }}</h1>
+    <p>{{ stream.description }}</p>
+    <p>Starts: {{ stream.start_time }}</p>
+    <p>Ends: {{ stream.end_time }}</p>
+
+    <h2>Watch Live</h2>
+    <div style="width: 100%; max-width: 800px; margin: auto;">
+        <iframe
+            src="{{ stream.stream_url }}"
+            width="100%"
+            height="450"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <a href="{% url 'userapp:live_stream_list' %}">Back to Live Streams</a>
+</body>
+</html>

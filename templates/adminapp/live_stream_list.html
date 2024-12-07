@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Streams</title>
+</head>
+<body>
+    <h1>Upcoming Live Streams</h1>
+    <ul>
+        {% for stream in streams %}
+            <li>
+                <h2>{{ stream.title }}</h2>
+                <p>{{ stream.description }}</p>
+                <p>Starts: {{ stream.start_time }}</p>
+                <a href="{% url 'adminapp:live_stream_detail' stream.id %}">Join Live Stream</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

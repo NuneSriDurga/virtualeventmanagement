@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("{% static 'images/background2.jpg' %}"); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .manager-info {
+            margin-bottom: 30px;
+        }
+
+        .manager-info p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #0073e6;
+            font-weight: bold;
+        }
+
+        .social-links a:hover {
+            color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Contact Details</h1>
+
+        <div class="manager-info">
+            <h2>Manager 1</h2>
+            <p><strong>Phone Number:</strong> +1 111 222 3333</p>
+            <p><strong>Email Address:</strong> manager1@gamil.com</p>
+        </div>
+
+        <div class="manager-info">
+            <h2>Manager 2</h2>
+            <p><strong>Phone Number:</strong> +1 444 555 6666</p>
+            <p><strong>Email Address:</strong> manager2@gmail.com</p>
+        </div>
+
+        <div class="social-links">
+            <h2>Follow Us</h2>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com/yourprofile" target="_blank">Twitter</a>
+        </div>
+    </div>
+</body>
+</html>
+]
